@@ -65,7 +65,7 @@ executor.shutdown();
 
 
 
-### [`CountDownLatch`]()
+### [`06-CountDownLatch`]()
 
 1. 线程安全的class,允许一个或多个线程一直等待，直到其他线程的操作执行完后再执行.
 2. 在声明时指定Thread数量,有两个方法countDown 与aWait.
@@ -75,6 +75,29 @@ executor.shutdown();
 
 
 [example CountDownLatch使用](06-CountDownLatch\src\app\App.java)
+
+
+
+
+
+
+### [`07-BlockingQueue & 生产者-消费者`]()
+
+1. 线程安全的queue,BlockingQueue,ArrayBlockingQueue
+2. 使用put以及take方法，是具有阻塞效果
+    ```java
+    // Retrieves and removes the head of this queue,
+    // waiting if necessary until an element becomes available.
+    Integer tmp = queue.take();
+    ```
+
+[example 生产-消费者](07-BlockingQueue\src\app\App.java)
+
+
+
+
+
+
 
 
 ## Editor
