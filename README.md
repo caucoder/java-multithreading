@@ -128,11 +128,29 @@ executor.shutdown();
 
 ### [`11-DeadLock`]()
 
-> Account 转账例子，这里用到了两个锁
+> Account 转账例子，这里用到了两个锁,
 
+
+避免四所的两个方法
 
 1. 声明锁的顺序一样[example Runner.java](11-DeadLock\src\app\Runner.java)
 2. 通过while循环不断检测锁是否可用[example RunnerImprove.java](11-DeadLock\src\app\RunnerImprove.java)
+
+
+
+
+### [`12-Semaphore`]()
+
+1. semaphore构造函数声明permits许可得数量
+2. aquire获取许可，release释放许可
+
+[example 线程池执行200个任务Connection（单例模式）,但是连接只用10个用semaphores来处理](12-Semaphore\src\app\Connection.java)
+
+
+![](imgs\semaphores-1.PNG)
+![](imgs\semaphores-2.PNG)
+![](imgs\semaphores-3.PNG)
+![](imgs\semaphores-4.PNG)
 
 
 
@@ -149,3 +167,5 @@ executor.shutdown();
 - [github-code](https://github.com/Beerkay/JavaMultiThreading/tree/master/JavaMultiThreadingCodes/src)
 - [udemy course](https://www.udemy.com/java-multithreading/learn/v4/t/lecture/107238?start=15)
 - [Top 5 Java Multithreading and Concurrency Courses for Experienced Programmers](https://javarevisited.blogspot.com/2018/06/top-5-java-multithreading-and-concurrency-courses-experienced-programmers.html)
+
+- [Youtube-Java-concurrency](https://www.youtube.com/playlist?list=PLhfHPmPYPPRk6yMrcbfafFGSbE2EPK_A6)
