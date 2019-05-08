@@ -6,6 +6,11 @@ learn java multithreading from udemy course
 2. 编写线程安全的代码（类）
 
 
+> 耗时，6.875小时。从早上8.25-22.57排除中间40分钟测试，效率时6.875+1.167/13.8666
+
+番茄工作效率： 57.99%，实际工作量:49.58%
+
+
 ### [`1-Starting Threads`](./01-Starting-Threading)
 
 > basic methods of creating a thread in java
@@ -159,7 +164,7 @@ executor.shutdown();
 
 
 
-### [`13-Callable and Future`]()
+### `13-Callable and Future`
 
 > get return value from threads
 
@@ -168,6 +173,31 @@ executor.shutdown();
 
 
 [Example 返回线程睡眠得时间，如果睡眠时间超过2000异常](13-Callable-and-Future/src/app/App.java)
+
+
+
+
+
+### `14-Interrupt Thread`
+
+> 中断
+
+1. 方法interrupt()发起
+2. 线程中检测： Thread.getCurrentThread().isInterrupt(),try-catch InterruptException
+    ```java
+    if (Thread.currentThread().isInterrupted()) {
+        System.out.println("Interrupt");
+        break;
+    }
+
+    //或者
+    try { 
+        Thread.sleep(1); 
+    } catch (InterruptedException e) {
+    System.out.println("Interrupt");
+    }           
+    ```
+
 
 
 
