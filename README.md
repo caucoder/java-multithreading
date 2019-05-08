@@ -45,6 +45,26 @@ multiple lock,synchronized代码块;
 
 
 
+### [`05-Thread-pools`]()
+
+1. recycling the threads avoid overhead.
+2. as soon as one thread is finished and it's idle that same thread will now process a new task.
+
+```java
+ExecutorService executor = Executors.newFixedThreadPool(2);
+// 提交5个任务
+for (int i = 0; i < 5; i++) {
+    executor.submit(new Processor(i));
+}
+// 禁止提交任务
+executor.shutdown();
+```
+
+[example 线程池Executors处理5个任务](05-Thread-Pool\src\app\App.java)
+
+
+
+
 ## Editor
 
 - vscode 
