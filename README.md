@@ -25,12 +25,23 @@ learn java multithreading from udemy course
 
 
 
-### [03-Synchronized]()
+### [`03-Synchronized`]()
 
 
 **synchronized**: guarantees all threads can see the current state of the variable.don't need **volatile**
 
 synchronized method,thread acquire object's intrinsic lock. 确保atomic原子操作（read-write(modify)）
+
+[example add count](03-Synchronized\src\app\AppSynchronized.java)
+
+
+### [`04-Lock-Objects`]()
+
+
+multiple lock,synchronized代码块;
+声明Object对象，使用不同的内部锁，提高时间性能
+
+[exmaple 使用multiple lock 提高时间效率](04-Lock-Objects\src\app\Worker.java)
 
 
 
