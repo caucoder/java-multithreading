@@ -20,6 +20,7 @@ learn java multithreading from udemy course
 
 > **volatile** : it's used to prevent threads caching variable.
 
+[example stop a thread](./02-Basic-Thread-Communication/src/app/VolatileKeyWord.java)
 
 
 
