@@ -36,7 +36,7 @@ learn java multithreading from udemy course
 
 synchronized method,thread acquire object's intrinsic lock. 确保atomic原子操作（read-write(modify)）
 
-[example add count](03-Synchronized\src\app\AppSynchronized.java)
+[example add count](03-Synchronized/src/app/AppSynchronized.java)
 
 
 ### [`04-Lock-Objects`]()
@@ -45,7 +45,7 @@ synchronized method,thread acquire object's intrinsic lock. 确保atomic原子�
 multiple lock,synchronized代码块;
 声明Object对象，使用不同的内部锁，提高时间性能
 
-[exmaple 使用multiple lock 提高时间效率](04-Lock-Objects\src\app\Worker.java)
+[exmaple 使用multiple lock 提高时间效率](04-Lock-Objects/src/app/Worker.java)
 
 
 
@@ -64,7 +64,7 @@ for (int i = 0; i < 5; i++) {
 executor.shutdown();
 ```
 
-[example 线程池Executors处理5个任务](05-Thread-Pool\src\app\App.java)
+[example 线程池Executors处理5个任务](05-Thread-Pool/src/app/App.java)
 
 
 
@@ -78,7 +78,7 @@ executor.shutdown();
 [中文版](http://www.importnew.com/15731.html)
 
 
-[example CountDownLatch使用](06-CountDownLatch\src\app\App.java)
+[example CountDownLatch使用](06-CountDownLatch/src/app/App.java)
 
 
 
@@ -95,7 +95,7 @@ executor.shutdown();
     Integer tmp = queue.take();
     ```
 
-[example 生产-消费者](07-BlockingQueue\src\app\App.java)
+[example 生产-消费者](07-BlockingQueue/src/app/App.java)
 
 
 
@@ -104,7 +104,7 @@ executor.shutdown();
 1. synchronized获取对象内部锁,wait阻塞，notify唤醒获取该内部锁的线程。
 2. notify执行后并不是wait就马上执行，而是要释放内部锁后。
 
-[example wait notify](08-wait-and-notify\src\app\Processor.java)
+[example wait notify](08-wait-and-notify/src/app/Processor.java)
 
 
 
@@ -113,7 +113,7 @@ executor.shutdown();
 
 1. 自己使用LinkedList，wait,notify实现生产-消费
 
-[**example 生产-消费者**](09-Low-Level Producer-Consumer\src\app\Processor.java)
+[**example 生产-消费者**](09-Low-Level Producer-Consumer/src/app/Processor.java)
 
 
 
@@ -121,7 +121,7 @@ executor.shutdown();
 
 1. 重入锁的使用方式ReentrantLock与Condition
 
-[example 通过使用ReentrantLock实现加法](10-ReentrantLock\src\app\Runner.java)
+[example 通过使用ReentrantLock实现加法](10-ReentrantLock/src/app/Runner.java)
 
 
 
@@ -133,8 +133,8 @@ executor.shutdown();
 
 避免四所的两个方法
 
-1. 声明锁的顺序一样[example Runner.java](11-DeadLock\src\app\Runner.java)
-2. 通过while循环不断检测锁是否可用[example RunnerImprove.java](11-DeadLock\src\app\RunnerImprove.java)
+1. 声明锁的顺序一样[example Runner.java](11-DeadLock/src/app/Runner.java)
+2. 通过while循环不断检测锁是否可用[example RunnerImprove.java](11-DeadLock/src/app/RunnerImprove.java)
 
 
 
@@ -144,13 +144,13 @@ executor.shutdown();
 1. semaphore构造函数声明permits许可得数量
 2. aquire获取许可，release释放许可
 
-[example 线程池执行200个任务Connection（单例模式）,但是连接只用10个用semaphores来处理](12-Semaphore\src\app\Connection.java)
+[example 线程池执行200个任务Connection（单例模式）,但是连接只用10个用semaphores来处理](12-Semaphore/src/app/Connection.java)
 
 
-![](imgs\semaphores-1.PNG)
-![](imgs\semaphores-2.PNG)
-![](imgs\semaphores-3.PNG)
-![](imgs\semaphores-4.PNG)
+![](imgs/semaphores-1.PNG)
+![](imgs/semaphores-2.PNG)
+![](imgs/semaphores-3.PNG)
+![](imgs/semaphores-4.PNG)
 
 
 
@@ -167,7 +167,7 @@ executor.shutdown();
 2. Future<> 用于接收值
 
 
-[Example 返回线程睡眠得时间，如果睡眠时间超过2000异常]()
+[Example 返回线程睡眠得时间，如果睡眠时间超过2000异常](13-Callable-and-Future/src/app/App.java)
 
 
 
