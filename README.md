@@ -65,6 +65,18 @@ executor.shutdown();
 
 
 
+### [`CountDownLatch`]()
+
+1. 线程安全的class,允许一个或多个线程一直等待，直到其他线程的操作执行完后再执行.
+2. 在声明时指定Thread数量,有两个方法countDown 与aWait.
+
+[CountDownLatch介绍-英文](https://howtodoinjava.com/java/multi-threading/when-to-use-countdownlatch-java-concurrency-example-tutorial/)
+[中文版](http://www.importnew.com/15731.html)
+
+
+[example CountDownLatch使用](06-CountDownLatch\src\app\App.java)
+
+
 ## Editor
 
 - vscode 
