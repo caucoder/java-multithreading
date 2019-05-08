@@ -155,11 +155,19 @@ executor.shutdown();
 
 
 
-### [`13-`]()
 
 
 
 
+### [`13-Callable and Future`]()
+
+> get return value from threads
+
+1. Callable<> call method用于返回值
+2. Future<> 用于接收值
+
+
+[Example 返回线程睡眠得时间，如果睡眠时间超过2000异常]()
 
 
 
