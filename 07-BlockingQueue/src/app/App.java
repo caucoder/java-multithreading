@@ -40,8 +40,8 @@ public class App {
             if (random.nextInt(10) == 0) {
                 // Retrieves and removes the head of this queue,
                 // waiting if necessary until an element becomes available.
-                Integer tmp = queue.take();
-                System.out.println("Take out: " + tmp);
+                Integer value = queue.take();
+                System.out.println("Take value: " + value);
             }
         }
     }

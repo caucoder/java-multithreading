@@ -2,6 +2,10 @@
 learn java multithreading from udemy course 
 
 
+1. 创建线程去执行代码
+2. 编写线程安全的代码（类）
+
+
 ### [`1-Starting Threads`](./01-Starting-Threading)
 
 > basic methods of creating a thread in java
@@ -94,6 +98,13 @@ executor.shutdown();
 [example 生产-消费者](07-BlockingQueue\src\app\App.java)
 
 
+
+### [`08-wait and notify`]()
+
+1. synchronized获取对象内部锁,wait阻塞，notify唤醒获取该内部锁的线程。
+2. notify执行后并不是wait就马上执行，而是要释放内部锁后。
+
+[example wait notify](08-wait-and-notify\src\app\Processor.java)
 
 
 
