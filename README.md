@@ -126,6 +126,17 @@ executor.shutdown();
 
 
 
+### [`11-DeadLock`]()
+
+> Account 转账例子，这里用到了两个锁
+
+
+1. 声明锁的顺序一样[example Runner.java](11-DeadLock\src\app\Runner.java)
+2. 通过while循环不断检测锁是否可用[example RunnerImprove.java](11-DeadLock\src\app\RunnerImprove.java)
+
+
+
+
 
 
 ## Editor
