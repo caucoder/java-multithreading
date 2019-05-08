@@ -2,7 +2,7 @@
 learn java multithreading from udemy course 
 
 
-### 1-Starting Threads
+### [`1-Starting Threads`](./01-Starting-Threading)
 
 > basic methods of creating a thread in java
 
@@ -14,6 +14,16 @@ learn java multithreading from udemy course
             //code here
         }).start();
     ```
+
+
+### [`2-Basic Thread Communication`](./02-Basic-Thread-Communication)
+
+> **volatile** : it's used to prevent threads caching variable.
+
+
+
+
+
 
 
 ## Editor
