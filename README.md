@@ -16,7 +16,7 @@ learn java multithreading from udemy course
     ```
 
 
-### [`2-Basic Thread Communication`](./02-Basic-Thread-Communication)
+### [`2-Volatile-Basic Thread Communication`](./02-Basic-Thread-Communication)
 
 > **volatile** : it's used to prevent threads caching variable.
 
@@ -24,6 +24,13 @@ learn java multithreading from udemy course
 
 
 
+
+### [03-Synchronized]()
+
+
+**synchronized**: guarantees all threads can see the current state of the variable.don't need **volatile**
+
+synchronized method,thread acquire object's intrinsic lock. 确保atomic原子操作（read-write(modify)）
 
 
 
